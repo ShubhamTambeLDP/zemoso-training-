@@ -1,0 +1,34 @@
+public interface Assets {
+    void save();
+    void buy();
+}
+
+public class Money implements Assets {
+    public void save(){
+        System.out.println("saving  for future");
+    }
+    public void buy(){
+        System.out.println(" make a FD of money");
+    }
+    
+}
+public class Gold implements Assets{
+    public void save(){
+        System.out.println("saving for future");
+    }
+    public void buy(){
+        System.out.println("buying something ");
+    } 
+}
+public class Bank {
+    Assets assets;
+    void addAssets(Assets assets){
+        System.out.println("added to bank");
+    }
+    void fixedDeposite(){
+        System.out.println("saving for the future");
+
+    }
+    
+}
+

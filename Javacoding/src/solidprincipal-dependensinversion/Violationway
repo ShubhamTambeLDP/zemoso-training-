@@ -1,0 +1,32 @@
+
+public class Money {
+    void save(){
+        System.out.println("saving  for future");
+    }
+    void buy(){
+        System.out.println("buying something ");
+    }
+    
+}
+public class Gold {
+    void save(){
+        System.out.println("saving for future");
+    }
+    void buy(){
+        System.out.println("buying something ");
+    } 
+}
+public class Bank {
+    Money money;
+    void addMoney(){
+        System.out.println("added to bank");
+    }
+    void fixedDeposite(){
+        System.out.println("make a FD of money");
+        
+    }
+    
+}
+
+    
+
