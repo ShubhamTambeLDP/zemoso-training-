@@ -1,0 +1,37 @@
+
+public interface Animals  {
+    void feed();
+    void play();
+    void farming();
+    void nightMonitoring();
+}
+public interface PetAnimal extends Animals  {
+
+    void feed();
+    void play();
+    void nightMonitoring();
+}
+public interface FarmAnimal extends Animals  {
+
+    void feed();
+    void play();
+    void farming();
+
+}
+public class Dogs implements PetAnimal{
+    public void feed (){
+    System.out.println("i can eat");  
+}
+public void play (){
+    System.out.println("i can eat");  
+}
+public void nightMonitoring (){
+    System.out.println("i can eat");  
+    
+
+}
+}
+
+
+
+

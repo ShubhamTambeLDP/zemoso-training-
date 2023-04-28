@@ -1,0 +1,41 @@
+public interface Newcar {
+    void accelerate();
+    void checktyres();
+    
+}
+public class NewElectriccar implements Newcar{
+
+    private Efficiency efficiency;
+    
+    
+    public void average() {
+
+        System.out.println("check the average");
+    }
+
+    public void accelerate() {
+    
+        engine.powerOn(800);
+        System.out.println("Check efficiency");
+        
+
+    }  
+}
+
+
+
+public class Newmotorcar implements Newcar{
+
+    public void average() {
+
+        System.out.println("check the average");
+    }
+
+    public void accelerate() {
+    
+        engine.powerOn(1000);
+        System.out.println("Check efficiency");
+        
+
+    }  
+}
