@@ -1,0 +1,22 @@
+public class Myprop {
+    public void get(){
+        System.out.println("get from parent");
+    }
+}
+public class Farm extends Myprop{
+    public void getFarm(){
+        System.out.println("get land from parent");
+    
+}}
+public class Home extends Myprop {
+
+
+    public void gethome(){
+        System.out.println("get land from parent");
+    }}
+    public class Land extends Myprop {
+        public void getland(){
+            System.out.println("get land from parent");
+        
+    }}
+    

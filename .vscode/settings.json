@@ -1,0 +1,7 @@
+{
+    "java.project.sourcePaths": [
+        "Helloworld/src",
+        "Helloworld"
+    ],
+    "git.ignoreLimitWarning": true
+}

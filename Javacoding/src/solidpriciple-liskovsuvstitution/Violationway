@@ -1,0 +1,29 @@
+public interface Car {
+    void turnOnEngine();
+    void accelerate();
+    
+}
+public class Motorcar implements Car {
+    private Engine engine;
+    public void turnOnEngine() {
+
+        engine.on();
+    }
+
+    public void accelerate() {
+    
+        engine.powerOn(1000);
+    }
+
+    public class Electriccar implements Car{
+
+        public void turnOnEngine() {
+            throw new AssertionError("I don't have an engine!");
+        }
+    
+        public void accelerate() {
+            
+        }
+            
+        }
+        //violation of liskov subtitution 
