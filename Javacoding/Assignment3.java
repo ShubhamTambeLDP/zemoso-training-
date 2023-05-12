@@ -49,12 +49,6 @@ import java.util.concurrent.TimeUnit;
 
 
 public class Assignment3 {
-    
-
-
-
-
-
 	public static void main(String[] args) throws ParseException {
 		SimpleDateFormat year = new SimpleDateFormat("dd-MM-yyyy");
 
@@ -62,18 +56,17 @@ public class Assignment3 {
 		System.out.println("please Enter input");
 		int number	=sc.nextInt();
 		List<String> dates=new ArrayList<String>();
+		
 		for (int i=0;i<=number;i++) {
 			String date=sc.nextLine();
 			dates.add(date);
-
 		}
 		System.out.println("Output");
 
 		for(String date:dates) {
 			if(date!="") {
 				String[] input= date.split(" ");
-				
-    String signup=input[0];
+				String signup=input[0];
 				String current=input[1];
 				java.util.Date signupdate= year.parse(signup);
 				java.util.Date currentdate= year.parse(current);
@@ -83,25 +76,18 @@ public class Assignment3 {
 				long dateAfterInMs = currentdate.getTime();
 				long timeDiff = Math.abs(dateAfterInMs - dateBeforeInMs);
 				long daysDiff = TimeUnit.DAYS.convert(timeDiff, TimeUnit.MILLISECONDS);
-				
 				if(daysDiff<30) {
 					Instant signupobj=signupdate.toInstant();
-					Instant finaldate=signupobj.minus(30
-                    , ChronoUnit.DAYS);
+					Instant finaldate=signupobj.minus(30, ChronoUnit.DAYS);
 					System.out.print(year.format(Date.from(finaldate)));
 					System.out.print(" ");
-
-                    System.out.println(year.format(currentdate));
-
-				}else {
+					System.out.println(year.format(currentdate)
+							   }
+				else {
 					System.out.println("No Range");
-
 				}
-
-
-			}
-
-		}
+							   }
+							   }
 	}
 }
 
