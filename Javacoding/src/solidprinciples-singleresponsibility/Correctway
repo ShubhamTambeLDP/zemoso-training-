@@ -1,0 +1,25 @@
+public class Saving {
+
+    public void gold(){
+        System.out.println(" child gets gold from parents"); 
+    
+} public void money(){
+    System.out.println(" child gets money from parents"); 
+}}
+public class Property {
+    public void home(){
+        System.out.println(" child gets home from parents"); 
+    
+}public void farm(){
+    System.out.println(" child gets farm from parents");
+}
+
+}
+public class Vehicle {
+    public void car(){
+        System.out.println(" child gets car from parents"); 
+    
+}public void scooty(){
+    System.out.println(" child gets scooty from parents");
+}
+}
